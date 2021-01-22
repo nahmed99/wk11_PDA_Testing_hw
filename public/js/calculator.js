@@ -18,7 +18,11 @@ Calculator.prototype.multiply = function(number){
 }
 
 Calculator.prototype.divide = function(number){
-  this.runningTotal = parseFloat(this.previousTotal) / parseFloat(number);
+  if (parseFloat(number) === 0.0 ) {
+    this.runningTotal = "Error; cannot divide by zero"; // Not sure that I like this solution, but it achieves the requirement.
+  } else {
+    this.runningTotal = parseFloat(this.previousTotal) / parseFloat(number);
+  }
 }
 
 Calculator.prototype.numberClick = function(number){
