@@ -49,7 +49,8 @@ describe('calculator', function () {
     calculator.operatorClick('+');
     calculator.numberClick(9);      // 18
     calculator.operatorClick('-');
-    calculator.numberClick(15);     // 3
+    calculator.numberClick(1);
+    calculator.numberClick(5);     // 3
     calculator.operatorClick('*');
     calculator.numberClick(4);      // 12
     calculator.operatorClick('/');
@@ -68,9 +69,10 @@ describe('calculator', function () {
     calculator.operatorClick('+');
     calculator.numberClick(9);      // 18
     calculator.operatorClick('-');
-    calculator.numberClick(333);    // That is not the number we wanted!!!
+    calculator.numberClick(3);    // That is not the number we wanted!!!
     calculator.clearClick()
-    calculator.numberClick(15);     // 3
+    calculator.numberClick(1);
+    calculator.numberClick(5);     // 3
     calculator.operatorClick('*');
     calculator.numberClick(4);      // 12
     calculator.operatorClick('/');
